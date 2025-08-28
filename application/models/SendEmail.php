@@ -13,9 +13,9 @@ class SendEmail extends CI_Model
     {
         $config = [
             'protocol' => 'smtp',
-            'smtp_host' => 'smtp.gmail.com',
-            'smtp_user' => 'nandamarta29062001@gmail.com',
-            'smtp_pass' => 'vaaj kcmj brit qcdf',
+            'smtp_host' => 'your_host',
+            'smtp_user' => 'yourmail@gmail.com',
+            'smtp_pass' => 'xxxx xxxx xxxx xxxx',
             'smtp_port' => 587,
             'smtp_crypto' => 'tls',
             'mailtype' => 'html',
@@ -32,7 +32,7 @@ class SendEmail extends CI_Model
         $this->email->initialize($this->configureEmail());
 
         // Set pengirim, penerima, dan isi email
-        $this->email->from('nandamarta29062001@gmail.com', 'Obscu-App');
+        $this->email->from('yourmail@gmail.com', 'Your-App');
         $this->email->to($receipt);
         $this->email->subject($subject);
         $this->email->message($message);
