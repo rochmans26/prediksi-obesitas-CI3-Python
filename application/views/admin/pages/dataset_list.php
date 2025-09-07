@@ -5,25 +5,25 @@
                 id="openModalData">Tambah</a>
         </div>
         <div class="table-responsive">
-            <table class="table">
+            <table class="table table-bordered">
                 <thead>
                     <tr>
                         <th scope="col">No.</th>
-                        <th scope="col">Sex</th>
-                        <th scope="col">Age</th>
-                        <th scope="col">Height</th>
-                        <th scope="col">Overweight_Obese_Family</th>
-                        <th scope="col">Consumption_of_Fast_Food</th>
-                        <th scope="col">Frequency_of_Consuming_Vegetables</th>
-                        <th scope="col">Number_of_Main_Meals_Daily</th>
-                        <th scope="col">Food_Intake_Between_Meals</th>
-                        <th scope="col">Smoking</th>
-                        <th scope="col">Liquid_Intake_Daily</th>
-                        <th scope="col">Calculation_of_Calorie_Intake</th>
-                        <th scope="col">Physical_Excercise</th>
-                        <th scope="col">Schedule_Dedicated_to_Technology</th>
-                        <th scope="col">Type_of_Transportation_Used</th>
-                        <th scope="col">Class</th>
+                        <th scope="col">Jenis Kelamin</th>
+                        <th scope="col">Umur</th>
+                        <th scope="col">Tinggi Badan</th>
+                        <th scope="col">Keluarga dengan Kelebihan Berat</th>
+                        <th scope="col">Konsumsi Makanan Cepat Saji</th>
+                        <th scope="col">Frekuensi Konsumsi Sayuran</th>
+                        <th scope="col">Jumlah Makan Utama Harian</th>
+                        <th scope="col">Asupan Makanan di Antara Waktu Makan</th>
+                        <th scope="col">Merokok</th>
+                        <th scope="col">Asupan Cairan Harian</th>
+                        <th scope="col">Perhitungan Asupan Kalori</th>
+                        <th scope="col">Olahraga Fisik</th>
+                        <th scope="col">Waktu yang Didedikasikan untuk Teknologi</th>
+                        <th scope="col">Jenis Transportasi yang Digunakan</th>
+                        <th scope="col">Kelas</th>
                         <th scope="col">Aksi</th>
                     </tr>
                 </thead>

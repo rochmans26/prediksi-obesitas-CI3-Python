@@ -6,7 +6,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-weight"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Obesity Prediction</div>
+        <div class="sidebar-brand-text mx-3">Prediksi Obesitas</div>
     </a>
     <!-- <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon rotate-n-15">
@@ -30,19 +30,19 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Features
+        Fitur
     </div>
     <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url('admin/predict'); ?>">
             <i class="fas fa-fw fa-calculator"></i>
-            <span>Prediction</span>
+            <span>Prediksi</span>
         </a>
     </li>
     <!-- Nav Item - Metrics -->
     <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url('admin/metrics'); ?>">
             <i class="fas fa-fw fa-chart-bar"></i>
-            <span>Model Metrics</span>
+            <span>Metrik Model</span>
         </a>
     </li>
 
@@ -50,14 +50,14 @@
     <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url('admin/manage_dataset'); ?>">
             <i class="fas fa-fw fa-database"></i>
-            <span>Data Management</span>
+            <span>Manajemen Data</span>
         </a>
     </li>
     <!-- Nav Item - Data User Management -->
     <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url('admin/manage_users'); ?>">
             <i class="fas fa-fw fa-user"></i>
-            <span>Data Users</span>
+            <span>Data Pengguna</span>
         </a>
     </li>
     <li class="nav-item">

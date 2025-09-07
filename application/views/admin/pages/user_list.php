@@ -11,8 +11,8 @@
                         <th scope="col">No.</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Email</th>
-                        <th scope="col">Sex</th>
-                        <th scope="col">Age</th>
+                        <th scope="col">Jenis Kelamin</th>
+                        <th scope="col">Umur</th>
                         <th scope="col">Telp</th>
                         <th scope="col">Aksi</th>
                     </tr>

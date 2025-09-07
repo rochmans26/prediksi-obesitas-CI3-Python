@@ -1,11 +1,11 @@
 <div class="row">
     <div class="col-12">
         <div class="card">
-            <h5 class="card-header">Greeting Card</h5>
+            <h5 class="card-header">Kartu Ucapan Selamat</h5>
             <div class="card-body">
-                <h1>Welcome, you are back!</h1>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h1>Selamat Datang, Kembali!</h1>
+                <p class="card-text">Dengan teks pendukung di bawah ini sebagai pengantar alami ke konten tambahan.</p>
+                <a href="#" class="btn btn-primary">Selamat Berjelajah!</a>
             </div>
         </div>
     </div>

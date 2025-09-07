@@ -20,110 +20,110 @@
                                     placeholder="Tinggi badan dalam sentimeter(cm)" aria-describedby="height" />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Overweight_Obese_Family</label>
+                                <label for="" class="form-label">Keluarga dengan Kelebihan Berat/Obesitas</label>
                                 <select class="form-select" name="overweight_obese_family" id="overweight_obese_family">
                                     <option selected>Pilih Salah Satu</option>
-                                    <option value="1">Yes</option>
-                                    <option value="2">No</option>
+                                    <option value="1">Ya</option>
+                                    <option value="2">Tidak</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Consumption_of_Fast_Food</label>
+                                <label for="" class="form-label">Konsumsi Makanan Cepat Saji</label>
                                 <select class="form-select" name="consumption_of_fast_food"
                                     id="consumption_of_fast_food">
                                     <option selected>Pilih Salah Satu</option>
-                                    <option value="1">Yes</option>
-                                    <option value="2">No</option>
+                                    <option value="1">Ya</option>
+                                    <option value="2">Tidak</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Frequency_of_Consuming_Vegetables</label>
+                                <label for="" class="form-label">Frekuensi Konsumsi Sayuran</label>
                                 <select class="form-select" name="frequency_of_consuming_vegetables"
                                     id="frequency_of_consuming_vegetables">
                                     <option selected>Pilih Salah Satu</option>
-                                    <option value="1">Rarely</option>
-                                    <option value="2">Sometimes</option>
-                                    <option value="3">Always</option>
+                                    <option value="1">Jarang</option>
+                                    <option value="2">Kadang-kadang</option>
+                                    <option value="3">Selalu</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Number_of_Main_Meals_Daily</label>
+                                <label for="" class="form-label">Jumlah Makan Utama Harian</label>
                                 <select class="form-select" name="number_of_main_meals_daily"
                                     id="number_of_main_meals_daily">
                                     <option selected>Pilih Salah Satu</option>
-                                    <option value="1">1-2</option>
-                                    <option value="2">3</option>
-                                    <option value="3">3+</option>
+                                    <option value="1">1-2 kali makan</option>
+                                    <option value="2">3 kali makan</option>
+                                    <option value="3">Lebih dari 3 kali makan</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Food_Intake_Between_Meals</label>
+                                <label for="" class="form-label">Asupan Makanan di Antara Waktu Makan</label>
                                 <select class="form-select" name="food_intake_between_meals"
                                     id="food_intake_between_meals">
                                     <option selected>Pilih Salah Satu</option>
-                                    <option value="1">Rarely</option>
-                                    <option value="2">Sometimes</option>
-                                    <option value="3">Usually</option>
-                                    <option value="4">Always</option>
+                                    <option value="1">Jarang</option>
+                                    <option value="2">Kadang-kadang</option>
+                                    <option value="3">Biasanya</option>
+                                    <option value="4">Selalu</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Smoking</label>
+                                <label for="" class="form-label">Merokok</label>
                                 <select class="form-select" name="smoking" id="smoking">
                                     <option selected>Pilih Salah Satu</option>
-                                    <option value="1">Yes</option>
+                                    <option value="1">Ya</option>
                                     <option value="2">No</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Liquid_Intake_Daily</label>
+                                <label for="" class="form-label">Asupan Cairan Harian</label>
                                 <select class="form-select" name="liquid_intake_daily" id="liquid_intake_daily">
                                     <option selected>Pilih Salah Satu</option>
-                                    <option value="1">amount smaller than one liter</option>
-                                    <option value="2">within the range of 1 to 2 liters</option>
-                                    <option value="3">In excess of 2 liters</option>
+                                    <option value="1">Kurang dari 1L</option>
+                                    <option value="2">1-2L</option>
+                                    <option value="3">Lebih dari 2L</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Calculation_of_Calorie_Intake</label>
+                                <label for="" class="form-label">Perhitungan Asupan Kalori</label>
                                 <select class="form-select" name="calculation_of_calorie_intake"
                                     id="calculation_of_calorie_intake">
                                     <option selected>Pilih Salah Satu</option>
-                                    <option value="1">Yes</option>
+                                    <option value="1">Ya</option>
                                     <option value="2">No</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Physical_Excercise</label>
+                                <label for="" class="form-label">Olahraga Fisik</label>
                                 <select class="form-select" name="physical_exercise" id="physical_exercise">
                                     <option selected>Pilih Salah Satu</option>
-                                    <option value="1">No Physical Activity</option>
-                                    <option value="2">In the range of 1-2 days</option>
-                                    <option value="3">In the range of 3-4 days</option>
-                                    <option value="4">In the range of 5-6 days</option>
-                                    <option value="5">6+ days</option>
+                                    <option value="1">Tidak ada aktivitas fisik</option>
+                                    <option value="2">1-2 hari</option>
+                                    <option value="3">3-4 hari</option>
+                                    <option value="4">5-6 hari</option>
+                                    <option value="5">Lebih dari 6 hari</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Schedule_Dedicated_to_Technology</label>
+                                <label for="" class="form-label">Waktu yang Didedikasikan untuk Teknologi</label>
                                 <select class="form-select" name="schedule_dedicated_to_technology"
                                     id="schedule_dedicated_to_technology">
                                     <option selected>Pilih Salah Satu</option>
-                                    <option value="1">Between 0 and 2 hours</option>
-                                    <option value="2">Between 3 and 5 hours</option>
-                                    <option value="3">Exceeding five hours</option>
+                                    <option value="1">0-2 jam</option>
+                                    <option value="2">3-5 jam</option>
+                                    <option value="3">Lebih dari 5 jam</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Type_of_Transportation_Used</label>
+                                <label for="" class="form-label">Jenis Transportasi yang Digunakan</label>
                                 <select class="form-select" name="type_of_transportation_used"
                                     id="type_of_transportation_used">
                                     <option selected>Pilih Salah Satu</option>
-                                    <option value="1">Automobile</option>
-                                    <option value="2">Motorbike</option>
-                                    <option value="3">Bike</option>
-                                    <option value="4">Public Transportation</option>
-                                    <option value="5">Walking</option>
+                                    <option value="1">Mobil</option>
+                                    <option value="2">Sepeda Motor</option>
+                                    <option value="3">Sepeda</option>
+                                    <option value="4">Transportasi Umum</option>
+                                    <option value="5">Berjalan Kaki</option>
                                 </select>
                             </div>
                             <div class="mb-3 d-flex justify-content-center">

@@ -77,9 +77,9 @@
                                                             name="sex">
                                                             <option value="" disabled selected>Select your gender
                                                             </option>
-                                                            <option value="male" <?php echo set_select('sex', 'male'); ?>>
+                                                            <option value="1" <?php echo set_select('sex', '1'); ?>>
                                                                 Male</option>
-                                                            <option value="female" <?php echo set_select('sex', 'female'); ?>>Female</option>
+                                                            <option value="2" <?php echo set_select('sex', '2'); ?>>Female</option>
                                                         </select>
                                                         <?php echo form_error('sex', '<small class="text-danger">', '</small>'); ?>
                                                     </div>

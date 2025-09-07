@@ -4,7 +4,7 @@
         <!-- Approach -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Model Performance Metrics</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Metrik Performa Model</h6>
             </div>
             <div class="card-body">
                 <?php if (isset($data['metrics'])): ?>
@@ -12,20 +12,20 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>Metric</th>
+                                    <th>Metrik</th>
                                     <th>KNN</th>
                                     <th>Random Forest</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Accuracy</td>
+                                    <td>Akurasi</td>
                                     <td><?php echo number_format($data['metrics']['KNN']['accuracy'] * 100, 2); ?>%</td>
                                     <td><?php echo number_format($data['metrics']['Random Forest']['accuracy'] * 100, 2); ?>%
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Precision</td>
+                                    <td>Presisi</td>
                                     <td><?php echo number_format($data['metrics']['KNN']['precision'] * 100, 2); ?>%</td>
                                     <td><?php echo number_format($data['metrics']['Random Forest']['precision'] * 100, 2); ?>%
                                     </td>
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="mt-4">
-                        <h4>Performance Chart</h4>
+                        <h4>Chart Performa</h4>
                         <div class="chart-area">
                             <canvas id="metricsChart"></canvas>
                         </div>
@@ -54,7 +54,7 @@
 
 
                 <?php else: ?>
-                    <div class="alert alert-warning">No metrics data available. Please try again later.</div>
+                    <div class="alert alert-warning">Tidak ada data metrik. Tolong coba kembali lagi.</div>
                 <?php endif; ?>
             </div>
         </div>

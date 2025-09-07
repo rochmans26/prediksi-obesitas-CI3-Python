@@ -233,10 +233,10 @@
         <section>
             <?php
             $interpretations = [
-                1 => 'Underweight',
-                2 => 'Normal weight',
-                3 => 'Overweight',
-                4 => 'Obese'
+                1 => 'Kurus',
+                2 => 'Normal',
+                3 => 'Kelebihan berat badan',
+                4 => 'Obesitas'
             ];
             $emojis = [
                 1 => '&#128531;',
@@ -247,32 +247,33 @@
             ?>
             <div class="container mt-3">
                 <div class="alert alert-info">
-                    <h4><i class="fas fa-chart-pie"></i> Prediction Results</h4>
+                    <h4><i class="fas fa-chart-pie"></i> Hasil Prediksi</h4>
                 </div>
-                <span
-                    class="d-block mx-auto mb-4 text-center" style="font-size:100px;"><?= $emojis[$prediction['RandomForest_prediction']] ?? 'Unknown' ?></span>
+                <span class="d-block mx-auto mb-4 text-center"
+                    style="font-size:100px;"><?= $emojis[$prediction['RandomForest_prediction']] ?? 'Unknown' ?></span>
                 <h1 class="display-5 fw-bold text-body-emphasis text-center">
                     <?= $interpretations[$prediction['RandomForest_prediction']] ?? 'Unknown' ?>
                 </h1>
                 <div class="col-lg-6 mx-auto">
                     <div class="alert alert-warning mt-4">
-                        <h5 class="text-center"><i class="fas fa-info-circle"></i> Recommendations</h5>
+                        <h5 class="text-center"><i class="fas fa-info-circle"></i> Rekomendasi</h5>
                         <?php
                         $max_prediction = max($prediction['KNN_prediction'], $prediction['RandomForest_prediction']);
                         if ($max_prediction >= 3): ?>
-                            <p>Based on the prediction, you may be at risk of overweight or obesity. Consider:</p>
+                            <p>Berdasarkan prediksi, Anda mungkin berisiko mengalami kelebihan berat badan atau obesitas.
+                                Pertimbangkan untuk:</p>
                             <ul>
-                                <li>Increasing physical activity (at least 30 minutes daily)</li>
-                                <li>Reducing fast food and sugary drinks consumption</li>
-                                <li>Eating more vegetables and fruits</li>
-                                <li>Consulting with a nutritionist or healthcare provider</li>
+                                <li>Meningkatkan aktivitas fisik (setidaknya 30 menit setiap hari)</li>
+                                <li>Mengurangi konsumsi makanan cepat saji dan minuman manis</li>
+                                <li>Lebih banyak mengonsumsi sayuran dan buah-buahan</li>
+                                <li>Berkonsultasi dengan ahli gizi atau tenaga kesehatan</li>
                             </ul>
                         <?php else: ?>
-                            <p>Your weight appears to be in a healthy range. Maintain your good habits:</p>
+                            <p>Berat badan Anda tampaknya berada dalam kisaran sehat. Pertahankan kebiasaan baik Anda:</p>
                             <ul>
-                                <li>Continue regular physical activity</li>
-                                <li>Maintain balanced diet</li>
-                                <li>Monitor your health regularly</li>
+                                <li>Lanjutkan aktivitas fisik secara teratur</li>
+                                <li>Pertahankan pola makan seimbang</li>
+                                <li>Periksa kesehatan Anda secara rutin</li>
                             </ul>
                         <?php endif; ?>
                     </div>
@@ -280,16 +281,16 @@
                         <div class="col-md-6">
                             <div class="card mb-4">
                                 <div class="card-header bg-primary text-white">
-                                    <h5 class="mb-0">Algorithm Results</h5>
+                                    <h5 class="mb-0">Hasil Algoritma</h5>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table table-hover">
                                             <thead class="thead-light">
                                                 <tr>
-                                                    <th>Algorithm</th>
-                                                    <th>Result</th>
-                                                    <th>Interpretation</th>
+                                                    <th>Algoritma</th>
+                                                    <th>Hasil</th>
+                                                    <th>Interpretasi</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -297,13 +298,13 @@
                                                 <tr>
                                                     <td><strong>K-Nearest Neighbors</strong></td>
                                                     <td><?= $prediction['KNN_prediction'] ?></td>
-                                                    <td><?= $interpretations[$prediction['KNN_prediction']] ?? 'Unknown' ?>
+                                                    <td><?= $interpretations[$prediction['KNN_prediction']] ?? 'Tidak Diketahui' ?>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td><strong>Random Forest</strong></td>
                                                     <td><?= $prediction['RandomForest_prediction'] ?></td>
-                                                    <td><?= $interpretations[$prediction['RandomForest_prediction']] ?? 'Unknown' ?>
+                                                    <td><?= $interpretations[$prediction['RandomForest_prediction']] ?? 'Tidak Diketahui' ?>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -316,7 +317,7 @@
                         <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header bg-info text-white">
-                                    <h5 class="mb-0">Your Input Summary</h5>
+                                    <h5 class="mb-0">Ringkasan Data Input</h5>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
@@ -328,9 +329,9 @@
                                                         <td>
                                                             <?php
                                                             if ($key === 'Sex') {
-                                                                echo ($value == 1) ? 'Male' : 'Female';
+                                                                echo ($value == 1) ? 'Laki-laki' : 'Perempuan';
                                                             } elseif ($key === 'Overweight_Obese_Family' || $key === 'Smoking' || $key === 'Calculation_of_Calorie_Intake') {
-                                                                echo ($value == 1) ? 'No' : 'Yes';
+                                                                echo ($value == 1) ? 'Ya' : 'Tidak';
                                                             } else {
                                                                 echo htmlspecialchars($value);
                                                             }
