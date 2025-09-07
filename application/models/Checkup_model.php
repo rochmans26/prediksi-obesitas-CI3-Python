@@ -56,7 +56,7 @@ class Checkup_model extends CI_Model
     }
     public function deleteCheckup($id)
     {
-        $this->db->where('id_checkup', $id);
+        $this->db->where('kode_checkup', $id);
         return $this->db->delete('tb_checkup');
     }
 }
